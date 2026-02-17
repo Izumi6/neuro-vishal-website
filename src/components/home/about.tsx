@@ -10,12 +10,12 @@ export function About() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <div className="relative">
-                        <div className="aspect-square rounded-2xl overflow-hidden relative shadow-xl">
+                        <div className="h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden relative shadow-xl bg-white/50 border border-gray-100 backdrop-blur-sm">
                             <Image
                                 src="/dr-vishal-2.png"
                                 alt="Dr. Vishal Pawar"
                                 fill
-                                className="object-cover object-top"
+                                className="object-contain p-2"
                             />
                         </div>
                         {/* Decorative dots */}
