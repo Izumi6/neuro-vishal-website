@@ -34,12 +34,14 @@ export default function AboutPage() {
                             transition={{ delay: 0.2, duration: 0.6 }}
                             className="relative"
                         >
-                            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative bg-gray-100">
+                            <div className="w-full rounded-2xl overflow-hidden shadow-2xl relative bg-gray-100">
                                 <Image
                                     src="/dr-vishal-2.png"
                                     alt="Dr. Vishal Pawar"
-                                    fill
-                                    className="object-cover object-top"
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    style={{ width: '100%', height: 'auto' }}
                                 />
                             </div>
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#0D9488]/10 rounded-full blur-2xl -z-10" />
