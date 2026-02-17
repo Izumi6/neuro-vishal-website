@@ -10,12 +10,14 @@ export function About() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-16 items-start">
                     <div className="relative">
-                        <div className="aspect-[4/5] w-full rounded-2xl overflow-hidden relative shadow-xl bg-white/50 border border-gray-100 backdrop-blur-sm">
+                        <div className="w-full rounded-2xl overflow-hidden relative shadow-xl bg-white/50 border border-gray-100 backdrop-blur-sm">
                             <Image
                                 src="/dr-vishal-2.png"
                                 alt="Dr. Vishal Pawar"
-                                fill
-                                className="object-cover object-top"
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                style={{ width: '100%', height: 'auto' }}
                             />
                         </div>
                         {/* Decorative dots */}
